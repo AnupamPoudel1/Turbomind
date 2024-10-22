@@ -7,6 +7,14 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      sm: '375px',  // You can change the size as per your needs
+      md: '768px',
+      lg: '1200px',
+    },
+    container: {
+      center: true
+    },
     extend: {
       colors: {
         background: "var(--background)",
