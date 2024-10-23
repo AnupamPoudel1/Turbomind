@@ -29,12 +29,10 @@ const ChooseUs = () => {
     return (
         <section className="flex flex-col justify-center items-center py-12 lg:py-24 px-4 lg:px-28 gap-8">
             <SectionHeader
+                title='Why Choose'
+                titleYellow='TurboMind'
                 description='To improve your readiness using the greatest resources available'
-            >
-                <h1 className="font-serif text-3xl lg:text-[2.5rem] font-semibold py-1">
-                    Why Choose <span className="text-secondary">TurboMind</span>
-                </h1>
-            </SectionHeader>
+            />
             <div className="flex flex-col lg:flex-row justify-center items-center gap-6 lg:gap-12">
                 {
                     boxData.map((data, index) => (

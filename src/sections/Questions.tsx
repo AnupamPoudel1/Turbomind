@@ -52,13 +52,11 @@ const Questions = () => {
     return (
         <section className="flex flex-col justify-center items-center lg:items-start bg-quinary py-12 lg:py-24 px-4 lg:px-32 gap-8">
             <SectionHeader
+                title="Everything you need to know in"
+                titleYellow="one location"
                 description='We assist you in developing your professional talents, from technical subjects to crucial abilities.'
                 className="lg:items-start lg:text-left"
-            >
-                <h1 className="font-serif text-3xl lg:text-[2.5rem] font-semibold py-1">
-                    Everything you need to know in <span className="text-secondary">one location</span>
-                </h1>
-            </SectionHeader>
+            />
             <div className="flex justify-start w-full">
                 <nav className="flex flex-none gap-6 lg:gap-8 overflow-x-clip">
                     <a
