@@ -23,6 +23,7 @@ const config: Config = {
         },
         secondary: "#FBC02D",
         tertiary: '#02134F',
+        quaternary: '#ED8FE7',
         text: {
           DEFAULT: "#818181",
         },
