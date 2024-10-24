@@ -27,7 +27,7 @@ const boxData = [
 
 const ChooseUs = () => {
     return (
-        <section className="flex flex-col justify-center items-center py-12 lg:py-24 px-4 lg:px-28 gap-8">
+        <section className="flex flex-col justify-center items-center py-12 lg:py-24 px-4 lg:px-32 gap-8">
             <SectionHeader
                 title='Why Choose'
                 titleYellow='TurboMind'

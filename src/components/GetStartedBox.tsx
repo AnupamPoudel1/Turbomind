@@ -4,7 +4,7 @@ import { twMerge } from 'tailwind-merge';
 
 const GetStartedBox = ({ Icon, title, description, className }: { Icon: IconType; title: string; description: string; className: string }) => {
     return (
-        <div className="p-4 rounded-lg shadow-custom shadow-black flex flex-col gap-4">
+        <div className="p-4 rounded-lg shadow-custom flex flex-col gap-4">
             <div className="size-6">
                 <Icon className={twMerge('size-6', className)} />
             </div>
