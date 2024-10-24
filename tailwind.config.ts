@@ -33,7 +33,12 @@ const config: Config = {
       fontFamily: {
         sans: 'var(--font-sans)',
         serif: 'var(--font-serif)'
-      }
+      },
+
+      boxShadow: {
+        custom: `0px 0px 8px 0px rgba(2, 19, 79, 0.08)`,
+
+      },
     },
   },
   plugins: [],

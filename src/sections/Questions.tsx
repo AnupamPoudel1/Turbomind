@@ -82,6 +82,7 @@ const Questions = () => {
                 {
                     courses.map((course, index) => (
                         <CourseCards
+                            key={index}
                             num={course.num}
                             title={course.title}
                             description={course.description}
