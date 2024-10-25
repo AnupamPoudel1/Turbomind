@@ -39,6 +39,10 @@ const config: Config = {
         custom: `0px 0px 8px 0px rgba(2, 19, 79, 0.08)`,
 
       },
+
+      transitionProperty: {
+        'height': 'height'
+      }
     },
   },
   plugins: [],
