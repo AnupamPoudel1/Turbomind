@@ -6,6 +6,7 @@ import GetStarted from "@/sections/GetStarted";
 import Pricing from "@/sections/Pricing";
 import Testimonials from "@/sections/Testimonials";
 import FAQ from "@/sections/FAQ";
+import Footer from "@/sections/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Pricing />
       <Testimonials />
       <FAQ />
+      <Footer />
     </div>
   );
 }
