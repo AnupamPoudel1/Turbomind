@@ -2,9 +2,49 @@ import appStore from '@/assets/images/appstore.png';
 import playStore from '@/assets/images/playstore.png';
 import Image from 'next/image';
 import mobileImg from '@/assets/images/mobile.png';
-import curveArrow from '@/assets/icons/Curve-arrow.png';
+import logo from '@/assets/icons/logo.png';
 import { TbArrowCurveRight } from "react-icons/tb";
 import { GrSend } from "react-icons/gr";
+import { FaPhoneAlt } from "react-icons/fa";
+import { MdMail } from "react-icons/md";
+
+const infoLink = [
+    {
+        title: "Contact us",
+        link: "#"
+    },
+    {
+        title: "Question Bank",
+        link: "#"
+    },
+    {
+        title: "Pricing List",
+        link: "#"
+    },
+]
+
+const studyLink = [
+    {
+        title: "Finance & Banking",
+        link: "#"
+    },
+    {
+        title: "Health & Pharmacy",
+        link: "#"
+    },
+    {
+        title: "Sales & Negotiation",
+        link: "#"
+    },
+    {
+        title: "IT & Cybersecurity",
+        link: "#"
+    },
+    {
+        title: "Old Questions",
+        link: "#"
+    },
+]
 
 const Footer = () => {
     return (
@@ -43,8 +83,70 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="actualfooter mt-72 lg:mt-20 py-12 px-4 w-full">
-                Footer
+            <div className="actualfooter mt-72 lg:mt-20 py-12 px-4 w-full flex flex-col gap-6">
+                <div className="flex flex-col gap-4">
+                    <div className="image w-full flex flex-col gap-3">
+                        <Image
+                            src={logo}
+                            alt='logo'
+                            className='w-28 h-auto object-contain'
+                        />
+                        <p className='text-primary text-sm'>
+                            Sagittis congue augue egestas integer Velna Purus Fusce a magna suscipit nec egestas magna aliquam ipsum vitae purus justo.
+                        </p>
+                    </div>
+                    <div className="flex flex-col gap-4 text-white">
+                        <h1 className='text-base font-bold'>
+                            Contact Us
+                        </h1>
+                        <div className='text-sm flex justify-center items-center w-max gap-2'>
+                            <FaPhoneAlt className='size-4' />
+                            <p>
+                                +977 9876543210
+                            </p>
+                        </div>
+                        <div className='text-sm flex justify-center items-center w-max gap-2'>
+                            <MdMail className='size-4' />
+                            <p>
+                                turbomind@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div className="flex gap-6 justify-between text-primary w-full">
+                    <div className="flex flex-col gap-3 w-full">
+                        <h1 className='font-bold text-base'>
+                            Information
+                        </h1>
+                        <ul className='flex flex-col gap-3 text-sm'>
+                            {
+                                infoLink.map((link, index) => (
+                                    <li className='hover:text-secondary' key={index}>
+                                        <a href={link.link}>
+                                            {link.title}
+                                        </a>
+                                    </li>
+                                ))
+                            }
+                        </ul>
+                    </div>
+                    <div className="flex flex-col gap-3 w-full">
+                        <h1 className='font-bold text-base'>
+                            Study Material
+                        </h1>
+                        <ul className='flex flex-col gap-3 text-sm'>
+                            {
+                                studyLink.map((link, index) => (
+                                    <li className='hover:text-secondary' key={index}>
+                                        <a href={link.link}>
+                                            {link.title}
+                                        </a>
+                                    </li>
+                                ))
+                            }
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
     )
